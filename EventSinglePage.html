@@ -1,20 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        function scrollto(div) {
+            $('html,body').animate(
+                {
+                    scrollTop: $("#" + div).offset().top
+                }, 'slow');
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
-<header>
-    <title>This is title</title>
-</header>
-
 <body>
-    Hello world
 
-    <footer style="background: #002855">Copyright © 2019 IEEE UP Student Branch. All rights reserved.</footer>
+    <div id="home">
+        <div id="header">
+            <div><img id="logo" src="resources/logo-letters.png"></div>
+            <div id="navigation">
+                <li onclick="scrollto('home');">Home</li>
+                <li onclick="scrollto('about');">About</li>
+                <li onclick="scrollto('contact');">Speakers</li>
+                <li onclick="scrollto('contact');">Program</li>
+                <li onclick="scrollto('contact');">Workshops</li>
+                <li onclick="scrollto('contact');">Sponsors</li>
+            </div>
+            <div> <button id="get_tickets"> GET TICKETS </button></div>
+        </div>
+
+        <div id="banner">
+            <h1 id="title">CYBERSECURTY WEEK</h1>
+            <p>TIMER</p>
+        </div>
+    </div>
+
+    <div id="about">
+        <h1> ABOUT </h1>
+        <p> Lorem Ipsum cenas </p>
+    </div>
+
 </body>
 
 </html>
