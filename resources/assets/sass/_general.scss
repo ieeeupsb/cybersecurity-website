@@ -1,0 +1,85 @@
+$font-stack: 'Oswald', sans-serif;
+
+//colors
+$background-ieee-color: #343540;
+$background-color: #E5E5E5;
+$background-white-color: 'white';
+
+body {
+    margin:0px auto;
+    padding:0px;
+    text-align:center;
+    width:100%;
+    font-family: $font-stack;
+    background-color:$background-color;
+}
+
+#home {
+    background: linear-gradient(0deg, rgba(52, 53, 64, 0.3), rgba(53, 64, 189, 0.3)), url(../../resources/images/site.png);
+    background-size: cover;
+    height: 120%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        display:inline-block;
+        margin-right:25px;
+        cursor:pointer;
+    }
+
+    #navigation {
+        padding-top: 30px;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    #logo {
+        width: 162px;
+        height: 45px;
+        padding-left: 4.375em;
+        padding-top: 1.688em;
+    }
+
+    #get_tickets {
+        width: 135px;
+        height: 45px;
+        margin-right: 4.375em;
+        margin-top: 1.750em;
+        background-color: #A67C52;
+        border: none;
+    
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 16px;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+}
+
+#banner {
+    width: 1440px;
+    height: 700px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    #title {
+        font-weight: bold;
+        font-size: 72px;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+}
+
+
