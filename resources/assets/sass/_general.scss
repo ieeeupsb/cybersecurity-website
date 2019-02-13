@@ -1,4 +1,10 @@
-$font-stack: 'Oswald', sans-serif;
+//Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+$oswald: 'Oswald', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
 
 //colors
 $background-ieee-color: #343540;
@@ -10,14 +16,14 @@ body {
     padding:0px;
     text-align:center;
     width:100%;
-    font-family: $font-stack;
     background-color:$background-color;
 }
 
 #home {
-    background: linear-gradient(0deg, rgba(52, 53, 64, 0.3), rgba(53, 64, 189, 0.3)), url(../../resources/images/site.png);
+    background: linear-gradient(0deg, rgba(30, 30, 30, 0.3), rgba(40, 40, 40, 0.3)), url(../../resources/images/site.png);
     background-size: cover;
     height: 120%;
+    font-family: $oswald;
 }
 
 #header {
@@ -33,16 +39,13 @@ body {
     #navigation {
         padding-top: 30px;
         color: #ffffff;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
         font-size: 18px;
         text-transform: uppercase;
     }
 
     #logo {
-        width: 162px;
-        height: 45px;
+        width: 250px;
+        height: 75px;
         padding-left: 4.375em;
         padding-top: 1.688em;
     }
@@ -55,9 +58,7 @@ body {
         background-color: #A67C52;
         border: none;
     
-        font-style: normal;
         font-weight: 500;
-        line-height: normal;
         font-size: 16px;
         text-transform: uppercase;
     
@@ -81,93 +82,94 @@ body {
         color: #FFFFFF;
     }
 }
-/*
+
 #about {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 550px;
-}
+    font-family: $oswald;
 
-#about #left{
-    display: block;
-    width: 560px;
-    height: 397.5px;
-    text-align: left;
-}
+    #left{
+        display: block;
+        width: 560px;
+        height: 397.5px;
+        text-align: left;
 
-#about #left p{
-    margin-top: 3em;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
+        h1 { 
+            font-size: 36px;
+            font-weight: 700;
+        }
 
-#about #left button{
-    width: 135px;
-    height: 49.5px;
-    margin-top: 2em;
-    background-color: #F15A24;
-    border: none;
+        p {
+            margin-top: 3em;
+            font-family: $open-sans;
+            font-size: 18px;
+        }
 
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: white;
-    float: left;
-}
+        button {
+            width: 135px;
+            height: 49.5px;
+            margin-top: 2em;
+            background-color: #F15A24;
+            border: none;
 
-#about #right{
-    width: 496px;
-    height: 195px;
-    padding-left: 3.5em;
-}
+            font-size: 16px;
+            text-transform: uppercase;
 
-#about #right #location{
-    display: flex;
-    text-align: left;
-    line-height: 17px;
-}
+            color: white;
+            float: left;
+        }
+    }
 
-#about #right #location_descr{
-    padding-left: 2.5em;
-    margin-bottom: 2em;
-}
+    #right{
+        width: 700px;
+        height: 195px;
+        padding-left: 3.5em;
 
-#about #right #location_descr p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
+        #location {
+            display: flex;
+            text-align: left;
+            line-height: 17px;
+        }
 
-#about #right #location_descr h1{
-    text-transform: uppercase;
-}
+        p{
+            font-family: $open-sans;
+            font-size: 18px;
+        }
 
-#about #right #date{
-    display: flex;
-    text-align: left;
-    line-height: 17px;
-}
+        h1 { 
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase; 
+        }
 
-#about #right #date_descr{
-    padding-left: 2.5em;
-    margin-bottom: 2em; 
-}
+        i{
+            width: 56px;
+            height: 64px;
+            font-size: 64px;
+            padding-top: 10px;
+            color: #F15A24;
+        }
 
-#about #right #date_descr p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
+        #location_descr{
+            padding-left: 2.5em;
+            margin-bottom: 2em;
+        }
 
-#about #right #date_descr h1{
-    text-transform: uppercase;
-}
+        #date{
+            display: flex;
+            text-align: left;
+            line-height: 17px;
+        }
 
-#about #right i{
-    width: 56px;
-    height: 64px;
-    font-size: 64px;
-    padding-top: 10px;
-    color: #F15A24;
+        #date_descr{
+            padding-left: 2.5em;
+            margin-bottom: 2em;
+
+
+        }
+    }
 }
 
 #get_your_tickets {
@@ -178,35 +180,35 @@ body {
     text-align: left;
     color: white;
     background: #343540;
-}
 
-#get_your_tickets div {
-    width: 737px;
-}
+    font-family: $oswald;
 
-#get_your_tickets h1{
-    font-size: 36px;
-    text-transform: uppercase;
-}
+    div {
+        width: 737px;
+    }
 
-#get_your_tickets p{
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
+    h1{
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 18px;
+        font-family: $open-sans;
+    }
+
+    button{
+        font-size: 18px;
     
-}
-
-#get_your_tickets button{
-    font-size: 18px;
-    font-family: 'Oswald', sans-serif;
-
-    background-color: #A67C52;
-    border: none;
-    text-transform: uppercase;
-
-    width: 135px;
-    height: 45px;
-
-    color: #FFFFFF;
+        background-color: #A67C52;
+        border: none;
+        text-transform: uppercase;
     
+        width: 135px;
+        height: 45px;
+    
+        color: #FFFFFF;
+        
+    }
 }
-*/
