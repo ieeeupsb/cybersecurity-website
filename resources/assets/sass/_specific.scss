@@ -36,9 +36,20 @@
         .content {
             background-color: white;
             padding: 2em;
+            text-align: center;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            transition: all ease-out 0.3s;
             i {
                 color: $highlight-color;
                 margin-right: 1em;
+                width: 1em;
+            }
+            span {
+                font-size: 0.9em;
+            }
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.03);
             }
         }
     }
