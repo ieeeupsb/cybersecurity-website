@@ -11,6 +11,31 @@
             font-size: 5em;
         }
     }
+
+    #timer{
+        display: inline-flex;
+        position: absolute;
+        bottom: 5em;
+
+        span{
+            text-transform: uppercase;
+            font-family: $oswald;
+            margin: 0 4em 4em 4em;
+            line-height: 2.2em;
+        }
+
+        p{
+            display:flex;
+            justify-content: center;
+            font-size: 3em; 
+        }
+
+        label{
+            display:flex;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+    }
 }
 
 #about {
@@ -63,6 +88,26 @@
                 font-size: 2em;
             }
         }
+
+        #timer{
+            display: block;
+             
+            span{
+                display: block;
+                line-height: 10px;
+                margin: 0 2em 2em 2em;
+                top: 2em;
+                
+                p{
+                    font-size: 2em;
+                }
+    
+                label{
+                    font-size: 1em;
+                }
+            } 
+        }
+        
     }
 }
 
