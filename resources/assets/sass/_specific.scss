@@ -1,0 +1,27 @@
+#banner {
+    background: linear-gradient(0deg, rgba(30, 30, 30, 0.3), rgba(40, 40, 40, 0.3)), url(../../resources/images/site.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    .content {
+        font-family: $oswald;
+        height: 100vh;
+        h1 {
+            font-weight: bold;
+            font-size: 5em;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    #banner {
+        .content {
+            h1 {
+                font-weight: bold;
+                font-size: 2em;
+            }
+        }
+    }
+}

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
     <script type="text/javascript">
@@ -20,38 +20,64 @@
         }
     </script>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script src="resources/assets/js/navbar-background.js"></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="resources/images/logo-letters.png" alt="logo">
+            </a>
 
-    <div id="home">
-        <div id="header">
-            <div><img id="logo" src="resources/images/logo-letters.png"></div>
-            <div id="navigation">
-                <li onclick="scrollto('home');">Home</li>
-                <li onclick="scrollto('about');">About</li>
-                <li onclick="scrollto('contact');">Speakers</li>
-                <li onclick="scrollto('contact');">Program</li>
-                <li onclick="scrollto('contact');">Workshops</li>
-                <li onclick="scrollto('contact');">Sponsors</li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sponsors</a>
+                    </li>
+                </ul>
+
+                <button type="button" class="btn btn-primary secondary">Get Ticket</button>
             </div>
-            <div> <button id="get_tickets"> Get Tickets </button></div>
-        </div>
+            
+        </nav>
+    </header>
 
-        <div id="banner">
-            <h1 id="title">Cybersecurity Week</h1>
+    <div id="banner">
+        <div class="content d-flex flex-column justify-content-center align-items-center">
+            <h1>Cybersecurity Week</h1>
             <p>TIMER</p>
         </div>
     </div>

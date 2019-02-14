@@ -1,87 +1,18 @@
-//Google Fonts
+// FONTS
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 
 $oswald: 'Oswald', sans-serif;
 $open-sans: 'Open Sans', sans-serif;
 
-//colors
+// COLORS
+$primary-color: #343540;
+$secondary-color: #A67C52;
+$highlight-color: #F15A24;
+
 $background-ieee-color: #343540;
 $background-color: #E5E5E5;
 $background-white-color: 'white';
-
-body {
-    margin:0px auto;
-    padding:0px;
-    text-align:center;
-    width:100%;
-    background-color:$background-color;
-}
-
-#home {
-    background: linear-gradient(0deg, rgba(30, 30, 30, 0.3), rgba(40, 40, 40, 0.3)), url(../../resources/images/site.png);
-    background-size: cover;
-    height: 120%;
-    font-family: $oswald;
-}
-
-#header {
-    display: flex;
-    justify-content: space-between;
-
-    li {
-        display:inline-block;
-        margin-right:25px;
-        cursor:pointer;
-    }
-
-    #navigation {
-        padding-top: 30px;
-        color: #ffffff;
-        font-size: 18px;
-        text-transform: uppercase;
-    }
-
-    #logo {
-        width: 250px;
-        height: 75px;
-        padding-left: 4.375em;
-        padding-top: 1.688em;
-    }
-
-    #get_tickets {
-        width: 135px;
-        height: 45px;
-        margin-right: 4.375em;
-        margin-top: 1.750em;
-        background-color: #A67C52;
-        border: none;
-    
-        font-weight: 500;
-        font-size: 16px;
-        text-transform: uppercase;
-    
-        color: #FFFFFF;
-    }
-}
-
-#banner {
-    width: 1440px;
-    height: 700px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    #title {
-        font-weight: bold;
-        font-size: 72px;
-        text-transform: uppercase;
-    
-        color: #FFFFFF;
-    }
-}
 
 #about {
     display: flex;
