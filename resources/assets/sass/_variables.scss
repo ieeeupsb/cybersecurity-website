@@ -1,5 +1,5 @@
 // FONTS
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 $oswald: 'Oswald', sans-serif;
@@ -13,95 +13,6 @@ $highlight-color: #F15A24;
 $background-ieee-color: #343540;
 $background-color: #E5E5E5;
 $background-white-color: 'white';
-
-#about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 550px;
-    font-family: $oswald;
-
-    #left{
-        display: block;
-        width: 560px;
-        height: 397.5px;
-        text-align: left;
-
-        h1 { 
-            font-size: 36px;
-            font-weight: 700;
-        }
-
-        p {
-            margin-top: 3em;
-            font-family: $open-sans;
-            font-size: 18px;
-        }
-
-        button {
-            width: 135px;
-            height: 49.5px;
-            margin-top: 2em;
-            background-color: #F15A24;
-            border: none;
-
-            font-size: 16px;
-            text-transform: uppercase;
-
-            color: white;
-            float: left;
-        }
-    }
-
-    #right{
-        width: 700px;
-        height: 195px;
-        padding-left: 3.5em;
-
-        #location {
-            display: flex;
-            text-align: left;
-            line-height: 17px;
-        }
-
-        p{
-            font-family: $open-sans;
-            font-size: 18px;
-        }
-
-        h1 { 
-            font-weight: 700;
-            font-size: 24px;
-            text-transform: uppercase; 
-        }
-
-        i{
-            width: 56px;
-            height: 64px;
-            font-size: 64px;
-            padding-top: 10px;
-            color: #F15A24;
-        }
-
-        #location_descr{
-            padding-left: 2.5em;
-            margin-bottom: 2em;
-        }
-
-        #date{
-            display: flex;
-            text-align: left;
-            line-height: 17px;
-        }
-
-        #date_descr{
-            padding-left: 2.5em;
-            margin-bottom: 2em;
-
-
-        }
-    }
-}
 
 #get_your_tickets {
     height: 300px;

@@ -1,7 +1,6 @@
 .navbar {
     padding: 1.2em 4em !important;
     background-color: none;
-    font-family: $oswald;
     transition: all ease-in 0.3s;
     &.active {
         background-color: $primary-color;
@@ -12,6 +11,7 @@
     li {
         cursor: pointer;
         a {
+            font-family: $oswald;
             color: white !important;
             text-transform: uppercase;
             font-size: 1em;
@@ -30,9 +30,34 @@
     }
 }
 
+.section {
+    padding: 5em 0;
+    .title {
+        margin-bottom: 3em;
+        h2 {
+            font-family: $oswald;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        path {
+            stroke: $highlight-color;
+        }
+    }
+    p {
+        font-family: $open-sans;
+    }
+    &.light-section {
+        color: black;
+    }
+    &.dark-section {
+        color: white;
+    }
+}
+
 button.btn.btn-primary {
     position: relative;
     display: inline-block;
+    font-family: $oswald;
     color: white;
     font-size: 0.9em;
     outline: none;
