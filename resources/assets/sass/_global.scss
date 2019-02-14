@@ -30,6 +30,14 @@
     }
 }
 
+// Anchor target offset fix
+:target {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
 .section {
     padding: 5em 0;
     .title {
