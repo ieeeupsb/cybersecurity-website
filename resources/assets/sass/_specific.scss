@@ -9,7 +9,6 @@
         color: white;
         h1 {
             font-size: 5em;
-            text-transform: uppercase;
         }
     }
 }
@@ -24,12 +23,23 @@
     }
     .icon-content {
         margin-left: 2em;
-        h4 {
-            font-family: $oswald;
-            text-transform: uppercase;
-        }
         p {
             margin: 0;
+        }
+    }
+}
+
+#workshops {
+    div[class^='col-'] {
+        color: black;
+        width: 100%;
+        .content {
+            background-color: white;
+            padding: 2em;
+            i {
+                color: $highlight-color;
+                margin-right: 1em;
+            }
         }
     }
 }
@@ -38,7 +48,6 @@
     #banner {
         .content {
             h1 {
-                font-weight: bold;
                 font-size: 2em;
             }
         }
