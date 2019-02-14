@@ -54,6 +54,10 @@
         color: white;
         background-color: $primary-color;
     }
+    &.speakers-section {
+        color: black;
+        background-color: rgba($color: $primary-color, $alpha: 0.08)
+    }
 }
 
 button.btn.btn-primary {
@@ -119,6 +123,39 @@ button.btn.btn-primary {
         &:before {
             background: $highlight-color; // button default background color
         }
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    color: white;
+    font-family: $open-sans;
+    padding: 2em 0;
+    img {
+        width: 10em;
+    }
+    .socials {
+        margin: 2em 0;
+        i {
+            width: 2.5em;
+            text-align: center;
+            color: white;
+            border: 1.2px solid white;
+            border-radius: 50%;
+            padding: 0.6em;
+            margin: 0 0.5em;
+            transition: all ease-out 0.2s;
+            &:hover {
+                background-color: $secondary-color;
+                border: 1.2px solid $secondary-color;
+                cursor: pointer;
+            }
+        }
+    }
+    p {
+        font-size: 0.8em;
+        text-align: center;
+        margin: 0;
     }
 }
 
