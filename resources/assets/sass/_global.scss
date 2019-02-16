@@ -83,7 +83,6 @@ p {
 button.btn.btn-primary {
     position: relative;
     display: inline-block;
-    font-family: $oswald;
     color: white;
     font-size: 0.9em;
     outline: none;
@@ -97,6 +96,7 @@ button.btn.btn-primary {
     overflow: hidden;
     transition: all .5s;
     span {
+        font-family: $oswald;
         position: relative;
         z-index: 2;
     }
