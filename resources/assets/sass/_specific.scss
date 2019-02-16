@@ -13,10 +13,10 @@
     }
     #timer {
         text-align: center;
-        font-family: $oswald;
         text-transform: uppercase;
         .col * {
             margin-bottom: 0;
+            font-family: $oswald !important;
         }
         .time-number {
             font-size: 3em;
