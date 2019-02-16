@@ -8,13 +8,19 @@ h6 {
     text-transform: uppercase;
 }
 
+body,
+span,
+p {
+    font-family: $open-sans !important;
+}
+
 .navbar {
     padding: 1.2em 4em !important;
     background-color: none;
     transition: all ease-in 0.3s;
     &.active {
         background-color: $primary-color;
-        box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.4);
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.4);
     }
     .navbar-brand * {
         width: 7em;
@@ -59,9 +65,6 @@ h6 {
         path {
             stroke: $highlight-color;
         }
-    }
-    p {
-        font-family: $open-sans;
     }
     &.light-section {
         color: black;
@@ -146,7 +149,6 @@ button.btn.btn-primary {
 footer {
     background-color: $primary-color;
     color: white;
-    font-family: $open-sans;
     padding: 2em 0;
     img {
         width: 10em;

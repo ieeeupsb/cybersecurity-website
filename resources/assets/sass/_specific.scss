@@ -43,6 +43,60 @@
     }
 }
 
+#program {
+    .nav-item {
+        &:not(:first-child) {
+            margin-left: 1em;
+        }
+        a {
+            font-family: $oswald;
+            text-transform: uppercase;
+            background-color: $secondary-color;
+            color: white;
+            padding: 0.6em 3.1em;
+            border-radius: 0;
+            &.active {
+                background-color: $primary-color;
+            }
+        }
+    }
+    .program-row {
+        .info {
+            background-color: rgba($color: $primary-color, $alpha: 0.8);
+            color: white;
+            flex: 1;
+            text-align: center;
+            min-width: 8.3em;
+            max-width: 8.3em;
+        }
+        i {
+            color: $highlight-color;
+            margin-right: 1em;
+            width: 1em;
+            text-align: center;
+        }
+        .description {
+            padding: 0.5em 1em;
+            width: 100%;
+            border-bottom: 2px dashed #e5e5e5;
+            p,
+            span {
+                font-size: 0.9em;
+            }
+        }
+        &:nth-child(odd) {
+            .info {
+                background-color: $primary-color;
+            }
+        }
+        &:last-child {
+            .description {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
 #workshops {
     div[class^='col-'] {
         color: black;
