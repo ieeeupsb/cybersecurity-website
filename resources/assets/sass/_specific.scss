@@ -6,33 +6,25 @@
     .content {
         font-family: $oswald;
         height: 100vh;
+        padding-top: 5.5em;
         color: white;
         h1 {
             font-size: 5em;
         }
     }
-
-    #timer{
+    #timer {
         display: inline-flex;
-        position: absolute;
-        bottom: 5em;
-
-        span{
-            text-transform: uppercase;
-            font-family: $oswald;
-            margin: 0 4em 4em 4em;
-            line-height: 2.2em;
+        text-align: center;
+        font-family: $oswald;
+        text-transform: uppercase;
+        .col * {
+            margin-bottom: 0;
         }
-
-        p{
-            display:flex;
-            justify-content: center;
-            font-size: 3em; 
+        .time-number {
+            font-size: 3em;
+            font-weight: 500;
         }
-
-        label{
-            display:flex;
-            justify-content: center;
+        .time-text {
             font-size: 1.5em;
         }
     }
@@ -88,26 +80,21 @@
                 font-size: 2em;
             }
         }
-
-        #timer{
+        #timer {
             display: block;
-             
-            span{
+            span {
                 display: block;
                 line-height: 10px;
                 margin: 0 2em 2em 2em;
                 top: 2em;
-                
-                p{
+                p {
                     font-size: 2em;
                 }
-    
-                label{
+                label {
                     font-size: 1em;
                 }
-            } 
+            }
         }
-        
     }
 }
 
