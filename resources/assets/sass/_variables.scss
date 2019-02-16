@@ -9,3 +9,20 @@ $open-sans: 'Open Sans', sans-serif;
 $primary-color: #343540;
 $secondary-color: #A67C52;
 $highlight-color: #F15A24;
+
+@keyframes slideInLeft {
+    from {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}

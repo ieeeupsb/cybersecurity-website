@@ -65,9 +65,12 @@
             background-color: rgba($color: $primary-color, $alpha: 0.8);
             color: white;
             flex: 1;
-            text-align: center;
             min-width: 8.3em;
             max-width: 8.3em;
+            h6 {
+                font-size: 0.9em;
+                font-weight: 400;
+            }
         }
         i {
             color: $highlight-color;
@@ -94,6 +97,9 @@
                 border-bottom: none;
             }
         }
+    }
+    .tab-pane.active {
+        animation: slideInLeft 0.7s ease-out;
     }
 }
 
@@ -137,6 +143,17 @@
             }
             .time-text {
                 font-size: 1em;
+            }
+        }
+    }
+    #program {
+        #pills-tab {
+            display: block;
+        }
+        .nav-item {
+            &:not(:first-child) {
+                margin-left: 0;
+                margin-top: 1em;
             }
         }
     }
