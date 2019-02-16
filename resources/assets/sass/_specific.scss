@@ -81,18 +81,11 @@
             }
         }
         #timer {
-            display: block;
-            span {
-                display: block;
-                line-height: 10px;
-                margin: 0 2em 2em 2em;
-                top: 2em;
-                p {
-                    font-size: 2em;
-                }
-                label {
-                    font-size: 1em;
-                }
+            .time-number {
+                font-size: 2em;
+            }
+            .time-text {
+                font-size: 1em;
             }
         }
     }
