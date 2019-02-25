@@ -80,6 +80,16 @@ p {
     }
 }
 
+tito-button.btn.btn-primary{
+    span {
+        color: white;
+        text-transform: uppercase;
+        font-family: $oswald;
+        position: relative;
+        z-index: 2;
+    }
+}
+
 button.btn.btn-primary, tito-button.btn.btn-primary { 
     position: relative;
     display: inline-block;
@@ -89,7 +99,7 @@ button.btn.btn-primary, tito-button.btn.btn-primary {
     background: transparent;
     border: none;
     border-radius: 0;
-    padding: 0.8em 2.2em 0.8em 2em;
+    padding: 0.8em 2em 0.8em 2em;
     cursor: pointer;
     text-decoration: none;
     overflow: hidden;
