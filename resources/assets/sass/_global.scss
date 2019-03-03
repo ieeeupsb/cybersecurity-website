@@ -80,19 +80,11 @@ p {
     }
 }
 
-tito-button.btn.btn-primary{
-    span {
-        color: white;
-        text-transform: uppercase;
-        font-family: $oswald;
-        position: relative;
-        z-index: 2;
-    }
-}
-
-button.btn.btn-primary, tito-button.btn.btn-primary { 
+button.btn.btn-primary,
+tito-button.btn.btn-primary {
     position: relative;
     display: inline-block;
+    min-width: fit-content;
     color: white;
     font-size: 0.9em;
     outline: none;
@@ -110,6 +102,7 @@ button.btn.btn-primary, tito-button.btn.btn-primary {
         font-family: $oswald;
         position: relative;
         z-index: 2;
+        cursor: pointer;
     }
     &:before,
     &:after {
@@ -193,7 +186,8 @@ footer {
     .navbar {
         background-color: $primary-color;
         padding: 1.2em !important;
-        button.btn.btn-primary, tito-button.btn.btn-primary {
+        button.btn.btn-primary,
+        tito-button.btn.btn-primary {
             width: 100%;
         }
     }
